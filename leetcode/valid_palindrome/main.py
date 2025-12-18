@@ -1,4 +1,4 @@
-def isPalindrome2(s: str) -> bool:
+def isPalindrome(s: str) -> bool:
     newStr = ""
 
     for c in s:
@@ -26,5 +26,5 @@ def alphaNum(c):
 
 if __name__ == "__main__":
     # test cases
-    print(isPalindrome2("race a car")) # false
+    print(isPalindrome("race a car")) # false
     print(isPalindrome2("A man, a plan, a canal: Panama")) # true

@@ -18,9 +18,15 @@ def isAnagramBySorted(s: str, t: str) -> bool:
     tt = sorted(t)
     return ss == tt
 
+def isAnagramByCounter(s: str, t: str) -> bool:
+    from collections import Counter
+    return Counter(s) == Counter(t)
+
 if __name__ == "__main__":
     print(isAnagram("rat", "cat")) # false
     print(isAnagram("anagram", "nagaram")) # true
 
     print(isAnagramBySorted("rat", "cat")) # false
-    print(isAnagramBySorted("anagram", "nagaram")) # true
+    print(isAnagramBySorted("anagram", "nagaram"))
+
+    print(isAnagramByCounter("anagram", "nagaram"))# true
