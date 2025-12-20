@@ -1,6 +1,4 @@
-from typing import List
-
-def findMedianSortedArrays(nums1: List[int], nums2: List[int]) -> float:
+def findMedianSortedArrays(nums1, nums2) -> float:
     # Merge the two sorted arrays
     merged = sorted(nums1 + nums2)
     length = len(merged)
